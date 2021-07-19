@@ -17,3 +17,14 @@ console.log(typeof(age));
 let number = Array(1,2,3,4,5,6,7); //ข้อมูลในอาเรย์
 console.log(number);
 console.log("ตัวที่ 4 = ", number[3]); //เลือกเฉพาะ
+//////////////////
+//if
+let balance = 5000;
+let withDraw = 1000;
+console.log("เงินบัญชี = ",balance);
+console.log("ถอนเงิน = ",withDraw);
+if(withDraw<=balance){ //ถ้ายอดถอน น้อยกว่า หรือ เท่ากับ เงินบัญชี ถึงจะทำงาน
+    balance-=withDraw; //บัญชี - ยอดถอน
+    console.log("ยอดคงเหลือ = ",balance); //แสดงเงินบัญชีที่ถูกเปลี่ยนค่าไป
+}
+/////////////////
