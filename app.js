@@ -101,3 +101,11 @@ function summation(x,y){ //รับค่าเข้ามา
 let sum = summation(10,10); //ส่งค่าไปฟังก์ชั่น
 console.log("ผลรวม = ",sum);
 ////////////////
+//แสดงข้อมูล อาเรย์ด้วยลูป
+let color = Array("แดง", "ส้ม", "ขาว", "เหลือง"); //ข้อมูลในอาเรย์
+let Countcolor = color.length; //สร้างตัวแปรให้ค่าเท่ากับ จำนวนในอาเรย์
+
+for(let i=0;i<=Countcolor;i++){ //ลูปอาเรย์
+    console.log("ลำดับที่ = ",i,"สี = ",color[i]);
+}
+////////////////
