@@ -12,3 +12,8 @@ console.log(name); //เอาตัวแปร name มาแสดงใน�
 let age = parseInt("20");
 console.log(age);
 console.log(typeof(age));
+////////////////////
+//Array
+let number = Array(1,2,3,4,5,6,7); //ข้อมูลในอาเรย์
+console.log(number);
+console.log("ตัวที่ 4 = ", number[3]); //เลือกเฉพาะ
