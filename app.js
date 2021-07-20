@@ -116,3 +116,14 @@ let n2 = [5,6,7];
 n1=n1.concat(n2); //รวมค่าในอาเรย์
 console.log(n1);
 //////////////
+//เรียงลำดับอาเรย์
+let points = [10,-1,5,6,20,3];
+
+console.log("ก่อนเรียงลำดับ = ",points);
+
+points.sort(function(a,b){
+    return a-b;
+});
+
+console.log("หลังเรียงลำดับ = ",points);
+////////////////
