@@ -158,3 +158,24 @@ function deleteData(){
 let a = document.getElementById('test'); //เรียกดูข้อมูลด้วย get id
 console.log(a);
 /////////////
+//เปลี่ยนสี
+const titleId =document.getElementById('test');
+
+function displayText(){
+  titleId.style.color="green";
+  titleId.style.backgroundColor="black";  
+}
+/////////////
+const allEl = document.querySelectorAll('p');
+const box = document.querySelector('.box');
+
+function lightMode(){
+    box.setAttribute('class', 'light');
+}
+
+function darkMode(){
+    box.setAttribute('class', 'dark');
+}
+
+
+
