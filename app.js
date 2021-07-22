@@ -127,3 +127,18 @@ points.sort(function(a,b){
 
 console.log("หลังเรียงลำดับ = ",points);
 ////////////////
+//javaScript object
+let user = { //ข้อมูลในออฟเจก
+    name:"cop", 
+    age:25, 
+    email:"cop@gmail.com",
+    displayUser:function(){ //สร้างฟังก์ชั่น
+        return "ชื่อพนักงาน = "+ this.name + " อายุ = "+ this.age + " อีเมล์ = "+ this.email;
+    }
+};
+
+console.log("ชื่อพนักงาน = ",user.name);//เรียกมาแสดงผล
+console.log("อายุ = ",user.age);
+
+console.log(user.displayUser()); //เรียกฟังก์ชั่นมาใช้งาน
+///////////////////
