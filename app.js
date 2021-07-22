@@ -1,4 +1,4 @@
-document.write("ทดสอบ");
+//document.write("ทดสอบ");
 
 // alert("แจ้งเตือน");
 
@@ -142,3 +142,15 @@ console.log("อายุ = ",user.age);
 
 console.log(user.displayUser()); //เรียกฟังก์ชั่นมาใช้งาน
 ///////////////////
+//comfirm
+function deleteData(){
+    let result = confirm("คุณต้องการลบใช่ไหม?");
+    if(result){
+        alert("ลบข้อมูลแล้ว");
+        console.log("ลบข้อมูลแล้ว");
+    }else{
+        alert("ยกเลิกลบข้อมูลแล้ว");
+        console.log("ยกเลิกลบข้อมูลแล้ว");
+    }
+}
+///////////////
