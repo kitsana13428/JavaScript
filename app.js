@@ -154,3 +154,7 @@ function deleteData(){
     }
 }
 ///////////////
+//dom
+let a = document.getElementById('test'); //เรียกดูข้อมูลด้วย get id
+console.log(a);
+/////////////
