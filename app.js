@@ -166,6 +166,7 @@ function displayText(){
   titleId.style.backgroundColor="black";  
 }
 /////////////
+//เปลี่ยนสี v.2
 const allEl = document.querySelectorAll('p');
 const box = document.querySelector('.box');
 
@@ -175,6 +176,17 @@ function lightMode(){
 
 function darkMode(){
     box.setAttribute('class', 'dark');
+}
+/////////////////
+//dom node
+const menu = document.getElementById('menu');
+let m1 = 1;
+function addItem(){
+const item = document.createElement('li'); //สร้าง li
+
+    
+    item.innerText = "Item "+(m1++); //ข้อความที่อยู่ใน li
+    menu.appendChild(item); //นำไปต่อ node แม่
 }
 
 
