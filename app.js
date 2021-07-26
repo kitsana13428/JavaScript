@@ -188,6 +188,26 @@ const item = document.createElement('li'); //สร้าง li
     item.innerText = "Item "+(m1++); //ข้อความที่อยู่ใน li
     menu.appendChild(item); //นำไปต่อ node แม่
 }
+///////////////////
+//dom css
+const box2 = document.getElementById('box2');
 
+function addDarkMode(){ //ฟังก์ชั่นดากโหมด
+    box2.classList.add("darkMode");
+}
 
+function addLigthMode(){ //ฟังก์ชั่นไลฟ์โหมด
+    box2.classList.add("ligthMode");
+}
+
+function removeDarkMode(){ //ลบฟังก์ชั่นดากโหมดออก
+    box2.classList.remove("darkMode");
+    box2.classList.remove("ligthMode");
+}
+
+function switchMode(){ //สลับเป็นเหมือนเดิม
+    box2.classList.toggle("darkMode");
+    box2.classList.toggle("ligthMode");
+}
+////////////////////
 

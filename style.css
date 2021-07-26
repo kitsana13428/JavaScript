@@ -6,3 +6,17 @@
     background-color: black;
     color: whitesmoke;
 }
+.darkMode{
+    border:1px solid #fff;
+    background-color: black;
+    color: whitesmoke;
+    padding: 30px;
+    margin: 10px; 
+}
+.ligthMode{
+    border:1px solid #fff;
+    background-color: chartreuse;
+    color: blue;
+    padding: 30px;
+    margin: 10px; 
+}
