@@ -210,4 +210,18 @@ function switchMode(){ //สลับเป็นเหมือนเดิม
     box2.classList.toggle("ligthMode");
 }
 ////////////////////
+//Dom event 
+function getMenu(){
+    const menu1 = document.getElementById('menu1'); //ดึงมาจาก id menu
+    const display=document.getElementById('display'); 
+    console.log(menu1.value.toUpperCase()); //แสดงผลใน log พิมพ์ใหญ่
+    display.innerText = menu1.value; //แสดงผลหน้าเว็บ
+}
+function hightligth(obj){
+    obj.style.background = "yellow"; //เมื่อเมาส์ไปวางจะทำงานเปลี่ยนสี
+}
+function unhightligth(obj){
+    obj.style.background = ""; //เอาเมาส์ออก = ไม่มีสี
+}
+//////////////////////
 

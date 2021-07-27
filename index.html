@@ -37,7 +37,19 @@
     <button onclick="removeDarkMode()">ยกเลิกโหมด</button>
 
     <button onclick="switchMode()">สลับโหมด</button>
-
+    <hr>
+    <label for="">เลือกภาษา</label>
+    <select name="" id="menu1" onchange="getMenu()">
+    <option value="Java">Java</option>
+    <option value="C#">C#</option>
+    <option value="PHP">PHP</option>
+    <option value="Javascript">Javascript</option>
+    </select>
+    <p id="display"></p>
+    <p id=overMouse>
+        <a href="" onmouseover="hightligth(this)" onmouseout="unhightligth(this)">หน้าหลัก!</a>
+    </p>
+    <hr>
     <script src="app.js"></script>
 </body>
 </html>
