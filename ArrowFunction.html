@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+
+    function myFunc() { //ฟังก์ชั่น ปกติ
+        return 'Hello World';
+    }
+
+    const name = () => 'Hello, Cop'; //แอร์โรว์ฟังก์ชั่น
+    console.log(name());
+
+    const Fullname = (val) => {
+        let myName = val.toUpperCase(); //สร้างตัวแปร และให้แสดงเป็นพิมพ์ใหญ่
+        return `Hello, ${myName}`; //ส่งค่าไป 2 ตัว
+    };
+    console.log(Fullname('kitsana')); //แสดงค่า
+    </script>
+</body>
+</html>
