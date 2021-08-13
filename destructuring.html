@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    
+    <script>
+        const points = [10, 20, 30, 40]; //อาเรย์
+        const [val1, val2, val3, val4] = points; //การแสดงอาเรย์ ES6 
+
+        console.log(val1, val2, val3, val4);
+
+        const car = { //ออฟเจกต์
+            type: 'Toyota',
+            color: 'Black',
+            model: '2021'
+        }
+
+        const { type, color, model } = car; //ดึงข้อมูลที่ง่ายกว่าแบบเก่า
+        console.log(type, color, model);
+    </script>
+
+
+</body>
+</html>
