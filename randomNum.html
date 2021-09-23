@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random</title>
+</head>
+<body>
+    <h1>สุ่มเลข</h1>
+    <p id="result"></p>
+
+    <Script>
+        let Nums = prompt("กรอกตัวเลข"); 
+        console.log("เลขที่สุ่ม" + " ",Nums);
+        let randomNum = (Math.floor(Math.random() *10));
+        document.getElementById("result").innerHTML = "เลขที่สุ่มได้ " + randomNum;
+    </Script>
+</body>
+</html>
