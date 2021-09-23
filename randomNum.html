@@ -7,14 +7,20 @@
     <title>Random</title>
 </head>
 <body>
-    <h1>สุ่มเลข</h1>
+    <h1 id="showNum"></h1>
     <p id="result"></p>
+   
 
     <Script>
-        let Nums = prompt("กรอกตัวเลข"); 
-        console.log("เลขที่สุ่ม" + " ",Nums);
-        let randomNum = (Math.floor(Math.random() *10));
+        let Nums = prompt("กรอกตัวเลข : "); 
+        let randomNum = Math.floor(Math.random() *10);
         document.getElementById("result").innerHTML = "เลขที่สุ่มได้ " + randomNum;
+
+        if(Nums == randomNum){
+            document.getElementById("shownum").innerHTML = "คุณถูกรางวัล!";
+        }else{
+            document.getElementById("shownum").innerHTML = "คุณไม่ถูกรางวัล!";
+        };
     </Script>
 </body>
 </html>
