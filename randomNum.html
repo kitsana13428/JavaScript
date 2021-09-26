@@ -12,14 +12,15 @@
    
 
     <Script>
-        let Nums = prompt("กรอกตัวเลข : "); 
+        let Nums = prompt("กรอกตัวเลข : ");
         let randomNum = Math.floor(Math.random() *10);
         document.getElementById("result").innerHTML = "เลขที่สุ่มได้ " + randomNum;
+        
 
         if(Nums == randomNum){
-            document.getElementById("shownum").innerHTML = "คุณถูกรางวัล!";
+            document.getElementById("showNum").innerHTML = "ถูกรางวัล!";
         }else{
-            document.getElementById("shownum").innerHTML = "คุณไม่ถูกรางวัล!";
+            document.getElementById("showNum").innerHTML = "ไม่ถูกรางวัล!";
         };
     </Script>
 </body>
