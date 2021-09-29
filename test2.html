@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discounts</title>
+</head>
+<body>
+    <center>
+    <h1>ส่วนลด</h1>
+    <hr> 
+    <p id=price></p>
+    <p id=discount></p>
+    </center>
+
+    <script>
+        let a = prompt("ใส่ราคาของคุณ")
+        document.getElementById("price").innerHTML = "ราคาสินค้า : " + a;
+        if(a <= 500){
+            document.getElementById("discount").innerHTML = "ไม่มีส่วนลด";
+        }else if(a <=4999.99){
+            document.getElementById("discount").innerHTML = "ส่วนลด 5% : " + (a*5)/100;
+        }else if(a <= 9999.99){
+            document.getElementById("discount").innerHTML = "ส่วนลด 6.5% : " + (a*6.5)/100;
+        }else if(a <=14999.99){
+            document.getElementById("discount").innerHTML = "ส่วนลด 8% : " + (a*8)/100;
+        }else{
+            document.getElementById("discount").innerHTML = "ส่วนลด 10% : " + (a*10)/100;
+        }
+
+    </script>
+</body>
+</html>
